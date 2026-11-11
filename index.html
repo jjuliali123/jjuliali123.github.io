@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Julia [Last Name]</title>
+  <meta name="description" content="Writer and physician assistant student. Fiction and essays on bodies, medicine, and the near future.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* To restyle the whole site, change the colors and font here */
+    :root {
+      --bg: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --rule: #e2e2e2;
+      --link: #1a56b8;
+      --font: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181d;
+        --text: #e8e8ea;
+        --muted: #9a9ca6;
+        --rule: #2c2f38;
+        --link: #8db1ff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 1.025rem;
+      line-height: 1.7;
+    }
+
+    a { color: var(--link); text-underline-offset: 0.18em; }
+    a:focus-visible {
+      outline: 3px solid var(--link);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .page {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 4rem;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .name {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.25rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav a { text-decoration: none; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
+
+    /* The bio comes first and gets the most room */
+    .bio p { margin: 0 0 1.1rem; }
+    .bio p:first-child { font-size: 1.3rem; line-height: 1.5; }
+
+    section { margin-top: 3rem; }
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .list { margin: 0; padding: 0; list-style: none; }
+    .list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .list li:first-child { padding-top: 0; }
+    .list .meta { color: var(--muted); }
+    .list .year { color: var(--muted); white-space: nowrap; }
+
+    footer {
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <h1 class="name">Julia [Last Name]</h1>
+      <nav aria-label="Sections">
+        <ul>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#recognition">Recognition</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="bio">
+        <p>I’m a writer and a physician assistant student at Stanford School of Medicine. I write fiction and essays about bodies, care, and what comes next.</p>
+        <p>I studied English with a creative writing concentration at Rice University. My short fiction and essays have appeared in <em>Subnivean</em>, <em>R2: Rice Review</em>, <em>Blood and Thunder Magazine</em>, and the <em>Rice Thresher</em>. I attended the Tin House Summer Writing Workshop in 2024 and serve on the board of <em>Anastomosis</em>, Stanford’s medical school literary publication.</p>
+        <p>I’m currently seeking representation for <strong>SOLARIS</strong>, a New Adult science fiction novel about an academy student whose mother dies under strange circumstances at a research lab.</p>
+      </div>
+
+      <!-- WRITING: replace each [Title of piece], [Year], and the # link -->
+      <section id="writing">
+        <h2>Writing</h2>
+        <ul class="list">
+          <li>
+            <span><a href="#">[Title of piece]</a> <span class="meta">in <em>Subnivean</em></span></span>
+            <span class="year">[Year]</span>
+          </li>
+          <li>
+            <span><a href="#">[Title of piece]</a> <span class="meta">in <em>R2: Rice Review</em></span></span>
+            <span class="year">[Year]</span>
+          </li>
+          <li>
+            <span><a href="#">[Title of piece]</a> <span class="meta">in <em>Blood and Thunder Magazine</em></span></span>
+            <span class="year">[Year]</span>
+          </li>
+          <li>
+            <span><a href="#">[Title of piece]</a> <span class="meta">in the <em>Rice Thresher</em></span></span>
+            <span class="year">[Year]</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="recognition">
+        <h2>Recognition</h2>
+        <ul class="list">
+          <li><span>Max Apple Prize, Rice University</span><span class="year">2022</span></li>
+          <li><span>George G. Williams Prize, Rice University</span><span class="year">2022</span></li>
+          <li><span>Tin House Summer Writing Workshop</span><span class="year">2024</span></li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at <a href="mailto:you@example.com">you@example.com</a>, or find me on <a href="https://www.tiktok.com/@yourhandle">TikTok</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Julia [Last Name]</p>
+    </footer>
+
+  </div>
+</body>
+</html>
